@@ -1,0 +1,16 @@
+rosbag: "/home/abhi/data/gtsam_data/line_2d.bag"
+
+topics: ["/gazebo/uwb_range_data_2d",
+         "/rb1_base/robotnik_base_control/odom",
+         "/rb1_base/imu/data"]
+
+map_frame: "world"
+
+sample_factor: 12
+
+initial_pose:
+  position:
+    x: 0
+    y: 0
+  orientation:
+    yaw: 0

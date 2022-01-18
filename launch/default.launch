@@ -1,0 +1,7 @@
+<launch>
+    <arg name="mode"            default="offline"/>
+    <node name="ro_sam_node" type="ro_sam_2d_node" pkg="ro_sam_2d">
+        <param name="mode"          value="$(arg mode)"/>
+        <rosparam command="load"    file="$(find ro_sam_2d)/configs/ro_sam_offline_config.yaml"/>
+    </node>
+</launch>
